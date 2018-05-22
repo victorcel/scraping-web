@@ -1,0 +1,6 @@
+/captcha
+/buscar/captcha
+geckodriver.log
+anticaptcha.py
+client_secret.json
+secret.json
