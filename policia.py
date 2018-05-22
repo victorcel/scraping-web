@@ -46,7 +46,15 @@ except:
     print ("No ha sido posible cargar la imagen")
 captcha = raw_input('Escriba Text Imagen: ')
 
-    time.sleep(2)
+
+try:
+    time.sleep(2)# captcha_fp = open('captcha.png', 'rb')
+# client = AnticaptchaClient(api_key)
+# task = ImageToTextTask(captcha_fp)
+# job = client.createTask(task)
+# job.join()
+# captcha=job.get_captcha_text()
+# print job.get_captcha_text()
     browser.find_element_by_id('textcaptcha').send_keys(captcha)
     time.sleep(2)
     elem = browser.find_element_by_id('j_idt20')
